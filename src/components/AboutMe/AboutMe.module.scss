@@ -1,0 +1,40 @@
+@use '../../../src/app/styles/vars.scss' as *;
+@use '../../../src/app/styles/media-queries.scss' as *;
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--accent-text-color);
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-md);
+    margin: 60px 0;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+.aboutP,
+.linkSuffix {
+    font-size: var(--font-size-sm);
+    font-weight: 100;
+    font-family: var(--font-raleway);
+    line-height: 1.2;
+}
+
+.aboutLeft {
+    margin-left: 20px;
+}
+
+.aboutA {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    font-size: var(--font-size-sm);
+    font-weight: 100;
+    font-family: var(--font-raleway);
+}

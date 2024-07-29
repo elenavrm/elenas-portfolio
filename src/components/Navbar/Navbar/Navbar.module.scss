@@ -1,0 +1,40 @@
+@use '../../../../src/app/styles/vars.scss' as *;
+@use '../../../../src/app/styles/media-queries.scss' as *;
+
+.navigation {
+    display: none;
+    gap: 20px;
+    list-style: none;
+    font-size: var(--font-size-xs);
+    justify-content: flex-end;
+}
+
+
+@include desktop {
+    .navigation {
+        display: flex;
+        gap: 10px;
+
+        li {
+            text-decoration: none;  
+        }
+    }
+}
+
+@include desktop-md {
+    .navigationLink {
+        min-width: 100px;
+        color: var(--text-color);  
+        text-decoration: none;  
+        font-family: var(--font-open-sans);
+
+        li {
+            text-decoration: none;  
+        }
+    }
+
+    .navigation {
+        display: flex;
+        gap: 20px;
+    }
+}

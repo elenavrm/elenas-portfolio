@@ -1,0 +1,24 @@
+:root {
+    --background-color: #060602; //background color, scrollbar background
+    --text-color: #fdfaf1;
+    --accent-color: #00d7fe; //e., v., hover, scrollbar-thumb, border
+    --accent-text-color: #73b8c9; 
+    --box-shadow-webkit: -1px 1px 16px 3px rgba(12, 145, 217, 0);
+    --box-shadow-moz: -1px 1px 16px 3px rgba(221, 11, 11, 0);
+    --box-shadow: -1px 1px 16px 3px rgb(0, 215, 254);
+    --hero-background: rgba(9, 9, 9, 0.605);
+
+    --font-raleway: 'Raleway', sans-serif;
+    --font-open-sans: 'OpenSans', sans-serif;
+
+    --font-size-xs: 16px;  // regular text
+    --font-size-sm: 24px;  // button
+    --font-size-md: 32px;  // H1 mobile
+    --font-size-lg: 36px;  // about me
+    --font-size-xl: 48px;  // sections
+    --font-size-xxl: 120px; // H1
+
+    --font-weight-semibold: 600; 
+
+    --text-uppercase: uppercase; 
+}

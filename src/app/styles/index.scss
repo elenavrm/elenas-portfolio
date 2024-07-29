@@ -1,0 +1,29 @@
+@use 'normalize' as *;
+@use 'fonts' as *;
+@use 'vars' as *;
+
+body {
+    background-color: var(--background-color); 
+    color: var(--text-color);
+}
+
+
+::-webkit-scrollbar {
+    width: 8px; 
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-text-color); 
+    border-radius: 3px; 
+    transition: background-color 0.3s ease; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent-color);
+}
+
+
+html {
+    scroll-behavior: smooth; 
+}

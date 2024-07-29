@@ -1,0 +1,170 @@
+@use '../../../src/app/styles/vars.scss' as *;
+@use '../../../src/app/styles/media-queries.scss' as *;
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--accent-text-color);
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-md);
+    margin: 30px 0; 
+}
+
+.centerP {
+    font-size: var(--font-size-sm);
+    font-weight: 100;
+    font-family: var(--font-raleway);
+    margin-left: 20px;
+}
+
+.textMe {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    position: relative;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-left: 20px;
+    margin-bottom: 60px;
+}
+
+form label {
+    font-size: var(--font-size-sm);
+    color: var(--accent-text-color);
+    font-family: var(--font-raleway);
+    padding: 10px;
+}
+
+form input {
+    border: 1.5px solid var(--accent-color);
+    border-radius: 3px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-size: var(--font-size-xs);
+    font-family: var(--font-open-sans);
+    padding: 13px;
+    margin-top: 10px;
+    width: 100%; 
+}
+
+form textarea {
+    resize: vertical;
+    border: 1.5px solid var(--accent-color);
+    border-radius: 3px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-size: var(--font-size-xs);
+    font-family: var(--font-open-sans);
+    padding: 13px;
+    margin-top: 10px;
+    width: 100%; 
+    min-height: 70px;
+}
+
+form button {
+    border: 1px solid var(--text-color);
+    border-radius: 3px;
+    width: 100%; 
+    max-width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--text-color);
+    text-decoration: none;
+    color: var(--background-color);
+    font-weight: 100;
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-sm);
+}
+
+form button:hover {
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    transition: .4s ease-in;
+    box-shadow: none;
+}
+
+.picDiv {
+    display: none; 
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.message {
+    color: var(--text-color);
+    font-size: var(--font-size-sm);
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+@include tablet {
+    .title {
+        margin: 60px 0;
+    }
+
+    .textMe {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .form {
+        width: 360px;
+        margin: 60px;
+    }
+
+    .picDiv {
+        display: flex; 
+        align-items: center;
+        margin: 10px;
+        margin-right: 100px;
+        flex-direction: column;
+    }
+
+    .emailPic {
+        width: 300px; 
+    }
+}
+
+@include desktop {
+    .title {
+        margin: 80px 0; 
+    }
+
+    .form {
+        width: 360px;
+        margin: 60px;
+    }
+
+    form button {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .picDiv {
+        margin-right: 150px; 
+    }
+
+    .emailPic {
+        width: 600px;
+    }
+}

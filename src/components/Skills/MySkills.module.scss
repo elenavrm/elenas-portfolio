@@ -1,0 +1,63 @@
+@use '../../../src/app/styles/vars.scss' as *;
+@use '../../../src/app/styles/media-queries.scss' as *;
+
+.skillsProgress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.skills {
+    -webkit-box-shadow: var(--box-shadow-webkit);
+    -moz-box-shadow: var(--box-shadow-moz);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    border-radius: 3px;
+    margin-bottom: 40px; 
+
+    &:first-child {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    &:last-child {
+        width: 70%;
+        max-width: 300px;
+    }
+}
+
+.pSl {
+    font-size: var(--font-size-sm);
+    font-family: var(--font-open-sans);
+    color: var(--accent-text-color);
+    font-weight: 300;
+    margin-top: auto;
+}
+
+.skillList {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+
+    .skillItem {
+        font-size: var(--font-size-xs);
+        font-family: var(--font-raleway);
+        color: var(--text-color);
+        padding: 5px 0;
+    }
+}
+
+
+@include tablet {
+    .skillsProgress {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .skills {
+        width: 350px;
+        margin-bottom: 0;
+    }
+}

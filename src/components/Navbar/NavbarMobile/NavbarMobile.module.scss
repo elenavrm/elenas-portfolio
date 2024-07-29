@@ -1,0 +1,87 @@
+@use '../../../../src/app/styles/vars.scss' as *;
+@use '../../../../src/app/styles/media-queries.scss' as *;
+
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all .25s ;
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    z-index: 17;
+    background-color:transparent;
+    border: none;
+}
+
+.lineTop,
+.lineMiddle,
+.lineBottom{
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    top:0;
+    left: 0;
+    background-color: var(--text-color);
+    transform: rotate(0);
+    transition: all .5s;
+}
+
+.lineMiddle{
+    transform: translateY(7px);
+}
+.lineBottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+    position: fixed;
+}
+.open .lineTop{
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .lineMiddle{
+    display: none;
+}
+.open .lineBottom{
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+.menu{
+    list-style: none;
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+        li{
+            margin-bottom: 30px;
+        }
+}
+
+.sectionHashLink {
+        min-width: 100px;
+        color: var(--text-color);  
+        text-decoration: none;  
+    
+}
+
+@include tablet {
+    .hamburger{
+        margin: 0 80px;
+    }
+}
+@include desktop {
+    .hamburger{
+        display: none;
+    }
+}

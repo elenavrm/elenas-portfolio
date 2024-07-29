@@ -1,0 +1,27 @@
+@use '../../../src/app/styles/vars.scss' as *;
+@use '../../../src/app/styles/media-queries.scss' as *;
+
+.footerContainer {
+    border-top: 1px solid var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    position: relative; 
+    z-index: 0; 
+}
+
+.footerText {
+    text-align: start;
+    font-family: var(--font-raleway);
+    font-size: var(--font-size-xs);
+    padding: 30px;
+    line-height: 1.5;
+}
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
