@@ -11,29 +11,23 @@
 }
 
 .cardsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px; 
-    justify-content: space-around; 
-  }
-  
-  .card {
-    max-width: 400px; 
-    background-color: var(--background-color) !important;
-    border: 0.7px solid var(--accent-text-color);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column; 
-    overflow: hidden; 
-    
-    &:hover {
-      transform: scale(1.05); 
-      box-shadow: 0 4px 8px rgb(0, 215, 254);
-    }
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-around;
+}
+
+.card {
+  max-width: 400px;
+  background-color: var(--background-color) !important;
+  border: 0.7px solid var(--accent-text-color);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 
   .cardContent {
-    flex: 1; 
+    flex: 1;
     padding: 6px;
   }
   
@@ -42,19 +36,19 @@
     font-family: var(--font-raleway);
     font-size: var(--font-size-xs);
     font-weight: 100 !important;
-    margin-bottom: 10px !important; 
+    margin-bottom: 10px !important;
   }
   
   .cardTechStack {
     color: var(--accent-text-color);
     font-family: var(--font-open-sans);
-    font-size: var(--font-size-xs) !important; 
+    font-size: var(--font-size-xs) !important;
     font-weight: 100 !important;
   }
   
   .cardActions {
     display: flex;
-    justify-content: start; 
+    justify-content: start;
   }
   
   .cardButton {
@@ -66,7 +60,6 @@
     justify-content: center;
     margin-top: 60px;
     margin-bottom: 90px;
- 
   }
   
   .projectBtn {
@@ -74,7 +67,7 @@
     border-radius: 3px;
     padding: 15px 90px;
     box-shadow: var(--box-shadow);
-    background-color: var(--text-color);
+    background-color: var (--text-color);
     text-decoration: none;
     color: var(--background-color);
     font-weight: 300;
@@ -87,4 +80,12 @@
     border: 1px solid var(--accent-color);
     transition: .4s ease-in;
     box-shadow: none;
+  }
+}
+
+@include desktop {
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgb(0, 215, 254);
+  }
 }

@@ -5,7 +5,7 @@ import style from './Prices.module.scss';
 const Prices = () => {
   return (
     <section id="prices">
-        <h3 className={style.title}>PRICES & AVAILABILITY</h3>
+        <h3 className={style.title}>PRICES</h3>
         <div className={style.aboutContainer}>
         <p className={style.centerP}>
             The cost and timeline for each project depend on how much work is involved from the start.  <br/>
