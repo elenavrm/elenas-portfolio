@@ -25,5 +25,5 @@ Check out the live demo of the portfolio [here](https://elv-portfolio.netlify.ap
 
 ### **Custom Hooks**
 
-	•	useIntersectionObserver: A custom hook to detect when an element enters or leaves the viewport. It is used to trigger animations and other effects based on element visibility.
-	•	useOverflowHidden: A custom hook to manage the overflow: hidden property for a better user experience, especially useful for modals and other overlay components.
+	•	useIntersectionObserver: A custom hook to detect when an element enters or leaves the viewport. 
+	•	useOverflowHidden: A custom hook to manage the overflow: hidden property for a better user experience.
