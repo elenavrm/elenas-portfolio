@@ -37,6 +37,7 @@
     font-weight: 100;
     font-family: var(--font-raleway);
     margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 .textMe {
@@ -46,19 +47,17 @@
     position: relative;
 }
 
-.form {
+.formContainer {
     display: flex;
     flex-direction: column;
     width: 100%; 
     max-width: 360px; 
     margin: 0 auto;
     margin-bottom: 60px;
-    animation: slideInLeft 1.5s ease-out forwards;
 }
 
 .emailPic {
     display: block;
-    animation: slideInRight 1.5s ease-out forwards;
     margin: 10px auto;
 }
 
@@ -66,10 +65,11 @@ form label {
     font-size: var(--font-size-sm);
     color: var(--accent-text-color);
     font-family: var(--font-raleway);
-    padding: 10px;
+    padding: 10px; 
 }
 
-form input {
+form input,
+form textarea {
     border: 1.5px solid var(--accent-color);
     border-radius: 3px;
     background-color: var(--text-color);
@@ -77,21 +77,12 @@ form input {
     font-size: var(--font-size-xs);
     font-family: var(--font-open-sans);
     padding: 13px;
-    margin-top: 10px;
+    margin: 10px auto; 
     width: 100%; 
 }
 
 form textarea {
     resize: vertical;
-    border: 1.5px solid var(--accent-color);
-    border-radius: 3px;
-    background-color: var(--text-color);
-    color: var(--background-color);
-    font-size: var(--font-size-xs);
-    font-family: var(--font-open-sans);
-    padding: 13px;
-    margin-top: 10px;
-    width: 100%; 
     min-height: 70px;
 }
 
@@ -154,6 +145,14 @@ form button:hover {
     width: 250px; 
 }
 
+.slideInLeft {
+    animation: slideInLeft 1.5s ease-out forwards;
+}
+
+.slideInRight {
+    animation: slideInRight 1.5s ease-out forwards;
+}
+
 @include tablet {
     .title {
         margin: 60px 0;
@@ -165,7 +164,7 @@ form button:hover {
         justify-content: space-between;
     }
 
-    .form {
+    .formContainer {
         max-width: 360px; 
         margin: 60px auto; 
     }
@@ -192,7 +191,7 @@ form button:hover {
         margin: 80px 0; 
     }
 
-    .form {
+    .formContainer {
         max-width: 360px; 
         margin: 60px 0 60px 50px;
     }
