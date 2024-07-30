@@ -11,6 +11,7 @@ Welcome to my portfolio website! This project showcases my work and skills in we
 - **Form Handling**: Integrated with [Formspree](https://formspree.io/) for handling form submissions.
 - **Material-UI**: Utilizes MUI components for a consistent and modern UI.
 - **Animations**: Implemented animations using keyframes to enhance the user experience.
+- **Mobile-First Approach**: Designed with a mobile-first approach to ensure a seamless experience on mobile devices before scaling up to larger screens.
 
 ## **Technologies Used**
 
