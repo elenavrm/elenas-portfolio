@@ -17,6 +17,7 @@ import newH from '../../assets/images/hogwarts-1.png';
 import recipe from '../../assets/images/recipe.png';
 import nutrition from '../../assets/images/nutrition.png';
 import readingList from '../../assets/images/readingList.png';
+import mealPlan from '../../assets/images/mealPlan.png';
 
 
 export const projects = [
@@ -24,31 +25,43 @@ export const projects = [
       title: 'Hogwarts Journey',
       image: newH,
       techStack: 'REACT | REACT ROUTER | HOOKS | REDUX | MUI | GSAP | API',
-      link: 'https://hogwarts-hp.netlify.app/'
+      link: 'https://hogwarts-hp.netlify.app/',
+      githubLink: 'https://github.com/elenavrm/hp-final'
     },
     {
        title: 'Find a Recipe',
        image: recipe,
        techStack: 'REACT | REACT HOOKS | API | CSS',
-       link: 'https://legendary-sorbet-fbb290.netlify.app/'
+       link: 'https://legendary-sorbet-fbb290.netlify.app/',
+       githubLink: 'https://github.com/elenavrm/recipe'
     },
     {
         title: 'Nutrition Analysis',
         image: nutrition,
         techStack: 'REACT | REACT HOOKS | API | CSS',
-        link: 'https://melodic-lily-62eaea.netlify.app/'
+        link: 'https://melodic-lily-62eaea.netlify.app/',
+        githubLink: 'https://github.com/elenavrm/nutrition_analysis'
+     },
+     {
+        title: 'Meal Plan',
+        image: mealPlan,
+        techStack: 'REACT | REACT HOOKS |  CSS',
+        link: 'https://tranquil-marshmallow-dcb965.netlify.app/',
+        githubLink: 'https://github.com/elenavrm/meal-plan/tree/main'
      },
      {
        title: 'Reading List',
        image: readingList,
        techStack: 'REACT | CSS',
-       link: 'https://keen-bombolone-f06a0b.netlify.app/'
+       link: 'https://keen-bombolone-f06a0b.netlify.app/',
+       githubLink: 'https://github.com/elenavrm/book-list'
      },
     {
       title: 'Meditation Web App',
       image: meditation,
       techStack: 'HTML | CSS | JS',
-      link: 'https://lets-rewind.glitch.me/'
+      link: 'https://lets-rewind.glitch.me/',
+      githubLink: 'https://github.com/elenavrm/meditation-app'
     },
     {
       title: 'To Do List',
@@ -66,13 +79,15 @@ export const projects = [
         title: 'Split The Bill',
         image: splitABill,
         techStack: 'HTML | CSS | JS',
-        link: 'https://total3coffee.glitch.me/'
+        link: 'https://total3coffee.glitch.me/',
+        githubLink: 'https://github.com/elenavrm/split-the-bill'
     },
     {
         title: 'Pomodoro Timer',
         image: pomodoroTimer,
         techStack: 'HTML | CSS | JS',
-        link: 'https://pomodorro.glitch.me/'
+        link: 'https://pomodorro.glitch.me/',
+        githubLink: 'https://github.com/elenavrm/pomodoro'
     },
     {
         title: 'Christmas Countdown',
@@ -96,7 +111,8 @@ export const projects = [
         title: 'Weather forecast EN/UA',
         image: weather,
         techStack: 'HTML | CSS | JS | API',
-        link: 'https://weather-eng-ua.glitch.me/'
+        link: 'https://weather-eng-ua.glitch.me/',
+        githubLink: 'https://github.com/elenavrm/weather-app'
     },
     {
         title: 'You vs Computer',

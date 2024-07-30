@@ -1,6 +1,8 @@
+// React Component
 import React, { useEffect, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import style from './ContactMe.module.scss';
+import contactIcon from '../../assets/images/contactIcon.png';
 
 function ContactForm() {
     const [state, handleSubmit] = useForm("xaykzqwk");
@@ -14,9 +16,9 @@ function ContactForm() {
 
             const timer = setTimeout(() => {
                 window.location.reload();
-            }, 3000); 
+            }, 3000);
 
-            return () => clearTimeout(timer); 
+            return () => clearTimeout(timer);
         }
     }, [state.succeeded]);
 
@@ -25,32 +27,36 @@ function ContactForm() {
             {showOverlay && (
                 <div className={style.overlay}>
                     <p className={style.message}>
-                    Thank you for your message. I will get back to you ASAP.
+                        Thank you! <br/>
+                        Your message was received
                     </p>
+                    <img src={contactIcon} 
+                    alt='contact me icon' 
+                    className={style.contactIcon}/>
                 </div>
             )}
             {showForm && (
                 <form 
-                onSubmit={handleSubmit} 
-                className={style.form}>
+                    onSubmit={handleSubmit} 
+                    className={style.form}>
                     <label>
                         Your Name: <br />
                         <input type="text" 
-                        name="name" 
-                        required placeholder="Your name..." />
+                            name="name" 
+                            required placeholder="Your name..." />
                     </label>
                     <label>
                         Your Email:<br />
                         <input type="email" 
-                        name="email" 
-                        required placeholder="Your email..." />
+                            name="email" 
+                            required placeholder="Your email..." />
                     </label>
                     <label>
                         Your Message:
                         <textarea name="message" 
-                        required cols="30" 
-                        rows="6" 
-                        placeholder="Type your message...">
+                            required cols="30" 
+                            rows="6" 
+                            placeholder="Type your message...">
                         </textarea>
                     </label>
 
@@ -61,9 +67,9 @@ function ContactForm() {
                     />
 
                     <button 
-                    type="submit" 
-                    disabled={state.submitting} 
-                    id="cta">send message</button>
+                        type="submit" 
+                        disabled={state.submitting} 
+                        id="cta">send message</button>
                 </form>
             )}
         </>

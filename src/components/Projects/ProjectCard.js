@@ -17,25 +17,31 @@ const ProjectCard = ({ project }) => {
           alt='project img'
         />
         <CardContent>
-          <Typography 
-          className={style.cardTitle}>
+          <Typography className={style.cardTitle}>
             {project.title}
           </Typography>
-          <Typography 
-          className={style.cardTechStack}>
+          <Typography className={style.cardTechStack}>
             {project.techStack}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions 
-      className={style.cardActions}>
+      <CardActions className={style.cardActions}>
         <Button 
-        className={style.cardButton} 
-        href={project.link} 
-        target="_blank" 
-        rel="noopener noreferrer">
+          className={style.cardButton} 
+          href={project.link} 
+          target="_blank" 
+          rel="noopener noreferrer">
           OPEN
         </Button>
+        {project.githubLink && (
+          <Button 
+            className={style.cardButton} 
+            href={project.githubLink} 
+            target="_blank" 
+            rel="noopener noreferrer">
+            View on GitHub
+          </Button>
+        )}
       </CardActions>
     </Card>
   );
