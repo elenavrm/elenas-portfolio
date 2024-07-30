@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+Elena Veremchuk’s Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio repository. This project showcases my skills, projects, and experience as a web developer.
 
-## Available Scripts
+Demo
 
-In the project directory, you can run:
+Check out the live demo of the portfolio here.
 
-### `npm start`
+Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+	•	Mobile-First Design: Ensures a responsive experience across all devices.
+	•	Custom Hooks: Includes useIntersectionObserver and useOverflowHidden for enhanced functionality.
+	•	Form Integration: Integrated with React Formspree for handling form submissions and MUI components for UI consistency.
+	•	Animations: Implements keyframe animations for smooth and engaging visual effects.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technologies and Tools
 
-### `npm test`
+Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+	•	React: A JavaScript library for building user interfaces.
+	•	HTML: The standard markup language for creating web pages.
+	•	CSS: Styling language used to describe the presentation of a document written in HTML.
+	•	JavaScript: Programming language used to create dynamic and interactive effects within web browsers.
 
-### `npm run build`
+Styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+	•	Sass (SCSS): A CSS preprocessor which adds special features such as variables, nested rules and mixins into regular CSS.
+	•	CSS Modules: A CSS file in which all class and animation names are scoped locally by default.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Form Handling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+	•	Formspree: A form backend platform for handling form submissions.
+	•	MUI (Material-UI): A popular React UI framework for building responsive, accessible, and customizable design systems.
 
-### `npm run eject`
+Animations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+	•	Keyframes: A CSS at-rule used to specify the intermediate steps in an animation sequence.
+	•	GSAP (GreenSock Animation Platform): A JavaScript library for building high-performance animations.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Custom Hooks
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+	•	useIntersectionObserver: A custom hook to detect when an element enters or leaves the viewport. It is used to trigger animations and other effects based on element visibility.
+	•	useOverflowHidden: A custom hook to manage the overflow: hidden property for a better user experience, especially useful for modals and other overlay components.
