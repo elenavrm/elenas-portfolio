@@ -1,28 +1,6 @@
 @use '../../../src/app/styles/vars.scss' as *;
 @use '../../../src/app/styles/media-queries.scss' as *;
 
-@keyframes slideInRight {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 .title {
     display: flex;
     justify-content: center;
@@ -37,7 +15,6 @@
     font-weight: 100;
     font-family: var(--font-raleway);
     margin-left: 20px;
-    margin-bottom: 15px;
 }
 
 .textMe {
@@ -47,7 +24,7 @@
     position: relative;
 }
 
-.formContainer {
+.form {
     display: flex;
     flex-direction: column;
     width: 100%; 
@@ -56,20 +33,14 @@
     margin-bottom: 60px;
 }
 
-.emailPic {
-    display: block;
-    margin: 10px auto;
-}
-
 form label {
     font-size: var(--font-size-sm);
     color: var(--accent-text-color);
     font-family: var(--font-raleway);
-    padding: 10px; 
+    padding: 10px;
 }
 
-form input,
-form textarea {
+form input {
     border: 1.5px solid var(--accent-color);
     border-radius: 3px;
     background-color: var(--text-color);
@@ -77,12 +48,21 @@ form textarea {
     font-size: var(--font-size-xs);
     font-family: var(--font-open-sans);
     padding: 13px;
-    margin: 10px auto; 
+    margin-top: 10px;
     width: 100%; 
 }
 
 form textarea {
     resize: vertical;
+    border: 1.5px solid var(--accent-color);
+    border-radius: 3px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    font-size: var(--font-size-xs);
+    font-family: var(--font-open-sans);
+    padding: 13px;
+    margin-top: 10px;
+    width: 100%; 
     min-height: 70px;
 }
 
@@ -132,11 +112,10 @@ form button:hover {
 }
 
 .message {
-    color: var(--text-color);
+    color: var(--accent-text-color);
     font-size: var(--font-size-sm);
     font-family: var(--font-raleway);
-    line-height: 1.2;
-    font-weight: 100;
+    font-weight: 200;
     background-color: var(--background-color);
     text-align: center;
 }
@@ -145,13 +124,6 @@ form button:hover {
     width: 250px; 
 }
 
-.slideInLeft {
-    animation: slideInLeft 1.5s ease-out forwards;
-}
-
-.slideInRight {
-    animation: slideInRight 1.5s ease-out forwards;
-}
 
 @include tablet {
     .title {
@@ -164,7 +136,7 @@ form button:hover {
         justify-content: space-between;
     }
 
-    .formContainer {
+    .form {
         max-width: 360px; 
         margin: 60px auto; 
     }
@@ -182,7 +154,7 @@ form button:hover {
     }
 
     .contactIcon {
-        width: 300px;
+        width: 300px; 
     }
 }
 
@@ -192,24 +164,29 @@ form button:hover {
     }
 
     .formContainer {
+        margin-left: 25px; 
+    }
+
+    .form {
         max-width: 360px; 
-        margin: 60px 0 60px 50px;
+        margin: 60px auto; 
+    }
+
+    form button {
+        margin-left: 10px; 
+        margin-right: 0; 
+        margin-top: 20px;
     }
 
     .picDiv {
-        display: flex; 
-        align-items: center;
-        margin: 10px;
-        margin-left: 50px;
-        flex-direction: column;
+        margin-right: 150px; 
     }
 
     .emailPic {
         width: 600px;
-        margin-left: 0;
     }
 
     .contactIcon {
-        width: 350px; 
+        width: 400px; 
     }
 }
