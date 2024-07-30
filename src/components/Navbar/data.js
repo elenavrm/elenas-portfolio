@@ -7,10 +7,6 @@ export const navigation = {
         path: 'projects',
         text: 'My Projects'
     },
-    prices: {
-        path: 'prices',
-        text: 'Prices'
-    }, 
     contacts: {
         path: 'contacts',
         text: 'Contacts'

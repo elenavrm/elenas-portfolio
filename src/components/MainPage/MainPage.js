@@ -5,7 +5,6 @@ import ContactMe from "../ContactMe/ContactMe";
 import Footer from "../Footer/Footer";
 import Hero from "../Hero/Hero";
 import Portfolio from "../Portfolio/Portfolio";
-import Prices from "../Prices/Prices";
 import ProjectList from "../Projects/ProjectList";
 import MySkills from "../Skills/MySkills";
 
@@ -29,7 +28,6 @@ const MainPage = () => {
                     <AboutMe />
                     <MySkills />
                     <ProjectList showAll={false} />
-                    <Prices />
                     <ContactMe />
                     <Footer />
                 </>
