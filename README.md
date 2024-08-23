@@ -22,4 +22,4 @@ Welcome to my portfolio website! This project showcases my work and skills in we
 
 ## **Demo**
 
-Check out the live demo of the portfolio here: [Elena V | Software Engineer](https://elv-portfolio.netlify.app/)
+Check out the live demo of the portfolio here: [Elena V | Software Engineer](https://elenav.netlify.app/)
