@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className={style.footerContainer}>
     <div className={style.footerText}>
-      <p>©2024 Elena V. All rights reserved <br/>
+      <p>©2025 Elena V. All rights reserved <br/>
         Some materials were taken for educational purposes</p>
     </div>
     <div className={style.footerIcons}>

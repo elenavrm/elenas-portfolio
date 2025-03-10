@@ -18,9 +18,16 @@ import recipe from '../../assets/images/recipe.png';
 import nutrition from '../../assets/images/nutrition.png';
 import readingList from '../../assets/images/readingList.png';
 import mealPlan from '../../assets/images/mealPlan.png';
+import design from '../../assets/images/design.png';
 
 
 export const projects = [
+    {
+        title: 'OM Design Studio',
+        image: design,
+        techStack: 'REACT | REACT ROUTER | HOOKS | MUI | SCSS',
+        link: 'https://olesya-martin.netlify.app/',
+      },
     {
       title: 'Hogwarts Journey',
       image: newH,
